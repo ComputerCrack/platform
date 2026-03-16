@@ -2177,6 +2177,46 @@
       "shouldPublish": false
     },
     {
+      "packageName": "@hcengineering/gitea",
+      "projectFolder": "services/gitea/gitea",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@hcengineering/gitea-assets",
+      "projectFolder": "services/gitea/gitea-assets",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@hcengineering/gitea-resources",
+      "projectFolder": "services/gitea/gitea-resources",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@hcengineering/model-gitea",
+      "projectFolder": "services/gitea/model-gitea",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@hcengineering/pod-gitea",
+      "projectFolder": "services/gitea/pod-gitea",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@hcengineering/server-gitea",
+      "projectFolder": "services/gitea/server-gitea",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@hcengineering/server-gitea-resources",
+      "projectFolder": "services/gitea/server-gitea-resources",
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@hcengineering/server-gitea-model",
+      "projectFolder": "services/gitea/server-gitea-model",
+      "shouldPublish": false
+    },
+    {
       "packageName": "@hcengineering/desktop-preferences",
       "projectFolder": "plugins/desktop-preferences",
       "shouldPublish": false

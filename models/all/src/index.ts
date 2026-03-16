@@ -90,6 +90,9 @@ import { serverDocumentId, createModel as serverDocumentModel } from '@hcenginee
 import github, { githubId, createModel as githubModel } from '@hcengineering/model-github'
 import { serverGithubId, createModel as serverGithubModel } from '@hcengineering/server-github-model'
 
+import gitea, { giteaId, createModel as giteaModel } from '@hcengineering/model-gitea'
+import { serverGiteaId, createModel as serverGiteaModel } from '@hcengineering/server-gitea-model'
+
 import { analyticsCollectorId, createModel as analyticsCollectorModel } from '@hcengineering/model-analytics-collector'
 import { exportId, createModel as exportModel } from '@hcengineering/model-export'
 import love, { loveId, createModel as loveModel } from '@hcengineering/model-love'
@@ -385,6 +388,18 @@ export default function buildModel (): Builder {
       }
     ],
     [
+      giteaModel,
+      giteaId,
+      {
+        label: gitea.string.ConfigLabel,
+        description: gitea.string.ConfigDescription,
+        enabled: true,
+        beta: true,
+        icon: gitea.icon.Gitea,
+        classFilter: defaultFilter
+      }
+    ],
+    [
       loveModel,
       loveId,
       {
@@ -551,6 +566,7 @@ export default function buildModel (): Builder {
     [serverActivityModel, serverActivityId],
     [serverDocumentModel, serverDocumentId],
     [serverGithubModel, serverGithubId],
+    [serverGiteaModel, serverGiteaId],
     [serverLoveModel, serverLoveId],
     [serverTimeModel, serverTimeId],
     [serverGuestModel, serverGuestId],

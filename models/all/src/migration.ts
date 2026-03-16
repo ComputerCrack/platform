@@ -32,6 +32,7 @@ import { coreOperation } from '@hcengineering/model-core'
 import { documentOperation } from '@hcengineering/model-document'
 import { driveOperation } from '@hcengineering/model-drive'
 import { githubOperation, githubOperationPreTime } from '@hcengineering/model-github'
+import { giteaOperation } from '@hcengineering/model-gitea'
 import { gmailOperation } from '@hcengineering/model-gmail'
 import { guestOperation } from '@hcengineering/model-guest'
 import { hrOperation } from '@hcengineering/model-hr'
@@ -97,6 +98,7 @@ export const migrateOperations: [string, MigrateOperation][] = [
   ['inventiry', inventoryOperation],
   ['github', githubOperation],
   ['pre-time', githubOperationPreTime],
+  ['gitea', giteaOperation],
   ['time', timeOperation],
   [loveId, loveOperation],
   ['activityServer', activityServerOperation],
